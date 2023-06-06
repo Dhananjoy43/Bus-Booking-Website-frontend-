@@ -1,12 +1,12 @@
-import "./AboutPage.css";
+import "./Support.css";
 import Navbar from "../../components/Navbar/Navbar";
-export default function AboutPage() {
+export default function Support() {
   return (
     <>
       <Navbar />
-      <section className="aboutPage ">
+      <section className="support ">
         <div className="align-center">
-          <h2>About page</h2>
+          <h1>Support</h1>
         </div>
       </section>
     </>

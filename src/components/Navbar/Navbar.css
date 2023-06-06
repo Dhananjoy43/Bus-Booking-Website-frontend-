@@ -20,6 +20,7 @@
   margin-right: 7rem;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .navbar .right ul {
   display: flex;

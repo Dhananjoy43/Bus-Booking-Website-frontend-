@@ -1,12 +1,12 @@
-import "./AboutPage.css";
+import "./Offers.css";
 import Navbar from "../../components/Navbar/Navbar";
-export default function AboutPage() {
+export default function Offers() {
   return (
     <>
       <Navbar />
-      <section className="aboutPage ">
+      <section className="offers ">
         <div className="align-center">
-          <h2>About page</h2>
+          <h1>Offers</h1>
         </div>
       </section>
     </>

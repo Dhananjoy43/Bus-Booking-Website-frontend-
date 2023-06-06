@@ -1,9 +1,12 @@
-import React from "react";
+import { NavLink } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import "./Navbar.css";
 import "../../App.css";
 import { FiLogIn } from "react-icons/fi";
 
 export default function Navbar() {
+  const navigate = useNavigate();
+
   return (
     <nav className="navbar">
       <div className="left">
@@ -12,19 +15,24 @@ export default function Navbar() {
       <div className="right">
         <ul>
           <li>
-            <a href="/hotels">Hotels</a>
+            <NavLink to={"/"}>Home</NavLink>
           </li>
           <li>
-            <a href="/bookings">Manage Bookings</a>
+            <NavLink to={"/about"}>About</NavLink>
           </li>
           <li>
-            <a href="/offers">Offers</a>
+            <NavLink to={"/offers"}>Offers</NavLink>
           </li>
           <li>
-            <a href="/support">Support</a>
+            <NavLink to={"/support"}>Support</NavLink>
           </li>
         </ul>
-        <button className="btn-primary align-center">
+        <button
+          className="btn-primary align-center"
+          onClick={() => {
+            navigate("/login");
+          }}
+        >
           <span>Login</span>
           <FiLogIn className="icon" />
         </button>
